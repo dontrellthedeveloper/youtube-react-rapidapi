@@ -5,8 +5,6 @@ import { ChannelCard, VideoCard } from "./";
 
 const Videos = ({ videos, direction }) => {
 
-  console.log(videos)  
-
   if(!videos?.length) return 'loading';
   
   return (

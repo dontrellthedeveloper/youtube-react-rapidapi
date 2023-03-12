@@ -3,6 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import ReactPlayer from "react-player";
 import { Typography, Box, Stack } from "@mui/material";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
+import nFormatter from "../utils/nFormatter";
 
 import { Videos, Loader } from "./";
 import { fetchFromAPI } from "../utils/fetchFromAPI";
@@ -25,7 +26,6 @@ const VideoDetail = () => {
 
   }, [id]);
 
-  console.log(videoDetail)
 
 
   if(!videoDetail?.snippet) return '<Loader />';
@@ -50,10 +50,12 @@ const VideoDetail = () => {
               </Link>
               <Stack direction="row" gap="20px" alignItems="center">
                 <Typography variant="body1" sx={{ opacity: 0.7 }}>
-                  {parseInt(viewCount).toLocaleString()} views
+                  {/* {parseInt(viewCount).toLocaleString()} views */}
+                  {nFormatter(viewCount)} views
                 </Typography>
                 <Typography variant="body1" sx={{ opacity: 0.7 }}>
-                  {parseInt(likeCount).toLocaleString()} likes
+                  {/* {parseInt(likeCount).toLocaleString()} likes */}
+                  {nFormatter(likeCount)} likes  
                 </Typography>
               </Stack>
             </Stack>
