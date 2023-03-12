@@ -36,7 +36,7 @@ const SearchBar = () => {
         placeholder='Search'
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
-        style={{backgroundColor: '#000'}}
+        style={{backgroundColor: '#000', color: '#f4f4f4'}}
       />
       <IconButton type='submit' sx={{ p: '10px', color: '#f4f4f4', backgroundColor: 'hsl(0, 0%, 18.82%)', borderTopRightRadius: '50%', borderBottomRightRadius: '50%', borderBottomLeftRadius: '0', borderTopLeftRadius: '0' }} aria-label='search'>
         <SearchIcon />
