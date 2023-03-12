@@ -13,6 +13,7 @@ import FitnessCenterIcon from '@mui/icons-material/FitnessCenter';
 import DeveloperModeIcon from '@mui/icons-material/DeveloperMode';
 
 export const logo = 'https://i.ibb.co/s9Qys2j/logo.png';
+export const logo2 = 'https://i.ibb.co/txzy4zW/youtube-logo.png';
 
 export const categories = [
   { name: 'New', icon: <HomeIcon />, },
